@@ -1,0 +1,22 @@
+[
+    {
+        "name": "les-restos-du-coeur",
+        "description": "Ils ont pour but « d'aider et d'apporter une assistance bénévole aux personnes démunies, notamment dans le domaine alimentaire par l'accès à des repas gratuits, et par la participation à leur insertion sociale et économique, ainsi qu'à toute action contre la pauvreté sous toutes ses formes",
+        "slogan" : "On compte sur vous !",
+        "image" :"https://upload.wikimedia.org/wikipedia/fr/thumb/a/ad/Restos_du_coeur_Logo.svg/1200px-Restos_du_coeur_Logo.svg.png"
+    },
+    
+    {
+        "name": "unicef",
+        "description": "L'UNICEF est chargé par l'Assemblée générale des Nations Unies de défendre les droits des enfants, d'aider à répondre à leurs besoins essentiels et de favoriser leur plein épanouissement. ... L'UNICEF est une organisation non partisane et sa coopération est exempte de toute discrimination.",
+        "slogan" : "Il faut donner à l'Unicef pour mieux donner aux enfants",
+        "image" :"https://www.lehavre.fr/sites/default/files/thumbnails/image/unicef.png" 
+    },
+    
+    {
+        "name": "konexio",
+        "description": "Certifiée organisme de formation et labellisée Grande École du Numérique, Konexio a pour mission de favoriser l’insertion socio-professionnelle des publics vulnérables par la montée en compétences numériques. Nous proposons plusieurs formations : des compétences numériques de base pour combattre l'exclusion numérique, au diplôme de développeur web et mobile très recherché sur le marché du travail",
+        "slogan" : "Faire  du numérique une opportunité pour toutes et tous",
+        "image" :"https://d1v8uc2aqxfbnw.cloudfront.net/production/associations/pictures/c3e6f2c53be9c9be9177d3f0888a97747022413c.png?1635249611" 
+    }
+]
