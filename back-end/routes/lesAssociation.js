@@ -17,6 +17,15 @@ const checkSameAssociation =(req, res, next) => {
         res.status(404).send("votre association n'est pas répertorier")
     }
 }
+const sameAssociation =(req, res, next) => {
+    console.log("resulta =>",req.body.association_concernée);
+    const theSameAssociation = associations.find(association => association.name === req.body.association_concernée.toLowerCase())
+    if (theSameAssociation) {
+        next()
+    } else {
+        res.status(404).send("votre association n'est pas répertorier")
+    }
+}
 // route pour voir toutes les associations
 app.get('/', (req, res) => { 
     res.json(associations)
@@ -33,7 +42,7 @@ app.get('/:slug/messages', (req, res) => {
     res.json(messageAssociation)
 })
 // route qui permet d'ajouter des message dan le fichier json exprès pour les message
-app.post("/:slug/message",checkSameAssociation, (req, res) => {
+app.post("/",sameAssociation, (req, res) => {
     // console.log("resulta de la reponse de postman2=>", req.body);
     // je stock ma reponse de req.body dans une const
         const newMessage = {
@@ -44,7 +53,7 @@ app.post("/:slug/message",checkSameAssociation, (req, res) => {
         }
         // // je push le nouveau message dans mon json message
         messageAssociation = [...messageAssociation, newMessage]
-        res.status(200).send("message crée").json(messageAssociation)
+        res.status(200).json(messageAssociation)
         
 })
 
